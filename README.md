@@ -16,4 +16,12 @@ mvn spring-boot:run
 
 This will create a simple web app that shows the location of the jar which is used to load the Tomcat class. This will verify that the spring-boot-starter-tcserver is being used instead of the default spring-boot-starter-tomcat
 
+You can use curl to verify
 
+```
+curl localhost:8080
+```
+
+License
+=======
+This example is licensed under the Apache Software License 2.0
