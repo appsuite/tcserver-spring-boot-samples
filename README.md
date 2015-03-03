@@ -50,7 +50,7 @@ curl localhost:8080
 Troubleshooting
 ===============
 
-"Tomcat connector in failed state" - This generally means that there is a port conflict. By default this example tries to bind to port 8080. You may add -Dserver.port=8081 (replace 8081 with your desired port numbe) to the maven command line.
+"Tomcat connector in failed state" - This generally means that there is a port conflict. By default this example tries to bind to port 8080. You may add -Dserver.port=8081 (replace 8081 with your desired port number) to the maven command line.
 
 License
 =======
