@@ -20,22 +20,23 @@ import org.apache.catalina.startup.Tomcat;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.net.URL;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 @RestController
 public class ExampleController {
+    private final static String JAR_PATTERN = ".*(com\\.springsource\\.org\\.apache\\.tomcat\\.embed\\.core\\-)(.*)(\\.jar).*";
+    private final Pattern pattern = Pattern.compile(JAR_PATTERN);
 
     @RequestMapping("/")
     public String index() {
         Class klass = Tomcat.class;
-        URL location = klass.getResource('/' + klass.getName().replace('.', '/') + ".class");
-        StringBuilder sb = new StringBuilder();
-        sb.append("Greetings from spring-boot-starter-tcserver-example! \n");
-        sb.append("This example will show the jar which loads the ");
-        sb.append(Tomcat.class.toString());
-        sb.append(". Please verify you see the jar file (com.springsource.org.apache.tomcat.embed.core-<version>.jar)");
-        sb.append("on the next line\n");
-        sb.append(location.toString() + "\n");
-        return sb.toString();
+        String location = klass.getResource('/' + klass.getName().replace('.', '/') + ".class").toString();
+        Matcher m = pattern.matcher(location);
+        if (m.matches()) {
+            return "You are running tc Server Runtime Embedded Version: " + m.group(2) + System.getProperty("line.separator");
+        } else {
+            return "You are not running a recognized version of tc Server Embedded" + System.getProperty("line.separator");
+        }
     }
 }
