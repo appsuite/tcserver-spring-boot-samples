@@ -22,6 +22,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<start-class>com.springsource.tcruntime.embedded.bootexample.SpringBootStarterTcserverExampleApplication</start-class>
 		<java.version>1.7</java.version>
+		<spring-boot-starter-tcserver.version>0.1.M6</spring-boot-starter-tcserver.version>
 	</properties>
 
 	<dependencies>
@@ -38,7 +39,7 @@
                 <dependency>
                         <groupId>com.springsource.vfabric.tcruntime</groupId>
                         <artifactId>spring-boot-starter-tcserver</artifactId>
-			<version>0.2.BUILD-SNAPSHOT</version>
+			<version>${spring-boot-starter-tcserver.version}</version>
                 </dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
