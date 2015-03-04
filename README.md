@@ -3,13 +3,13 @@ Spring Boot starter package for tc Server Example
 
 This project illustrates a very simple example of spring-boot-starter-tcserver usage. 
 
-Currently spring-boot-starter-tcserver version 0.1.M5 only provides a drop in replacement for spring-boot-starter-tomcat. Additional functionality will be added in the next release.
+Currently spring-boot-starter-tcserver version 0.1.M6 only provides a drop in replacement for spring-boot-starter-tomcat. Additional functionality will be added in the next release.
 
 Prerequisites
 =============
 To use this example you will need
 
-* Access to Pivotal Commercial Maven Repository - https://repository.cloudfoundry.com/
+* Register for free access to Pivotal Commercial Maven Repository - [https://repository.cloudfoundry.com/]
 * JRE/JDK 7 or newer
 * Maven 3.2 or newer (Required by spring-boot-maven-plugin)
 
