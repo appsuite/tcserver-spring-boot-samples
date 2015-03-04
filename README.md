@@ -1,7 +1,7 @@
 # spring-boot-starter-tcserver-example
 Spring Boot starter package for tc Server Example
 
-This project illustrates a very simple example of spring-boot-starter-tcserver usage. 
+This project is a simple example of how to use spring-boot-starter-tcserver as a drop in replacement for spring-boot-starter-tomcat.  
 
 Currently spring-boot-starter-tcserver version 0.1.M6 only provides a drop in replacement for spring-boot-starter-tomcat. Additional functionality will be added in the next release.
 
