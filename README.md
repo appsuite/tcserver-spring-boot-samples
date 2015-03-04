@@ -23,16 +23,16 @@ You will need the following configured in your ~/.m2/settings.xml. Username and 
 ```xml
 <settings>
 	<servers>
-                <server>
-                        <id>tcruntime-release</id>
-                        <username>*your email*</username>
-                        <password>*your password*</password>
-                </server>
-                <server>
-                        <id>spring-boot-starter-tcserver-milestone</id>
-                        <username>*your email*</username>
-                        <password>*your password*</password>
-                </server>
+		<server>
+			<id>tcruntime-release</id>
+			<username>*your email*</username>
+			<password>*your password*</password>
+		</server>
+		<server>
+			<id>spring-boot-starter-tcserver-milestone</id>
+			<username>*your email*</username>
+			<password>*your password*</password>
+		</server>
 	</servers>
 </settings>
 ```
