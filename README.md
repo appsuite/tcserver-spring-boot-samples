@@ -16,7 +16,7 @@ To use this example you will need
 Building
 ========
 
-You will need the following configured in your ~/.m2/settings.xml. Username and password should be the same as used on the Pivotal Commercial Mavren Repository
+You will need the following configured in your ~/.m2/settings.xml. Username and password should be the same as used on the Pivotal Commercial Maven Repository
 
 ```xml
                 <server>
