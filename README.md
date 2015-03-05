@@ -3,7 +3,7 @@ Spring Boot starter package for tc Server Example
 
 This project is a simple example of how to use spring-boot-starter-tcserver as a drop in replacement for spring-boot-starter-tomcat.  
 
-Currently spring-boot-starter-tcserver version 0.1.M6 only provides a drop in replacement for spring-boot-starter-tomcat. Additional functionality will be added in the next release.
+Currently spring-boot-starter-tcserver version 0.1.RELEASE only provides a drop in replacement for spring-boot-starter-tomcat. Additional functionality will be added in the next release.
 
 Spring Boot 
 
@@ -29,7 +29,7 @@ You will need the following configured in your ~/.m2/settings.xml. Username and 
 			<password>*your password*</password>
 		</server>
 		<server>
-			<id>spring-boot-starter-tcserver-milestone</id>
+			<id>spring-boot-starter-tcserver-release</id>
 			<username>*your email*</username>
 			<password>*your password*</password>
 		</server>
