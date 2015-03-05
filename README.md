@@ -15,7 +15,7 @@ To use this example you will need
 * JRE/JDK 7 or newer
 * Maven 3.2 or newer (Required by spring-boot-maven-plugin)
 
-Usage
+Maven Usage
 ==================
 
 You will need the following configured in your ~/.m2/settings.xml. Username and password should be the same as used on the Pivotal Commercial Maven Repository
@@ -55,6 +55,11 @@ You can use curl to verify
 ```
 curl localhost:8080
 ```
+
+Gradle usage
+============
+
+For gradle usage example please see build.gradle
 
 Troubleshooting
 ===============

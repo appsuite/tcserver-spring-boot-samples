@@ -1,19 +1,34 @@
 /*
+ * Copyright 2015 Pivotal Software, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+/*
 
-Create a gradle.properties file and define your CloudFoundry Repo
-username and password.
+/*
+ * This examples require that you create a gradle.properties file and define your 
+ * Pivotal Commercial Maven Reposoritory username and password in that file
+ * sample gradle.properties:
 
-sample gradle.properties:
+pivotal_maven_repo_username=your_username
+pivotal_maven_repo_password=your_password
 
-cf_repo_username=your_username
-cf_repo_password=your_password
-
- */
+ * to build run "gradle bootRun"
+*/
 
 project.ext {
-    tcserver_springboot_version = '0.1.RELEASE'
-    cf_springboot_repo = 'http://repository.cloudfoundry.com/data3/spring-boot-starter-tcserver-milestone/maven/bundles/milestone'
-    cf_tcruntime_repo = 'http://repository.cloudfoundry.com/data3/tcruntime-release/maven/bundles/release'
+    spring_boot_starter_tcserver_version = '0.1.RELEASE'
+    spring_boot_starter_tcserver_release_repo = 'http://repository.cloudfoundry.com/data3/spring-boot-starter-tcserver-release/maven/bundles/release'
+    tcruntime_embedded_repo = 'http://repository.cloudfoundry.com/data3/tcruntime-release/maven/bundles/release'
 }
 
 buildscript {
@@ -35,17 +50,17 @@ repositories {
     }
     maven {
         credentials {
-           username project.cf_repo_username
-           password project.cf_repo_password
+           username project.pivotal_maven_repo_username
+           password project.pivotal_maven_repo_password
         }
-        url project.cf_springboot_repo
+        url project.spring_boot_starter_tcserver_release_repo
     }
     maven {
         credentials {
-           username project.cf_repo_username
-           password project.cf_repo_password
+           username project.pivotal_maven_repo_username
+           password project.pivotal_maven_repo_password
         }
-        url project.cf_tcruntime_repo
+        url project.tcruntime_embedded_repo
     }
 }
 
@@ -53,5 +68,5 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-web") {
        exclude module: "spring-boot-starter-tomcat"
    }
-    compile("com.springsource.vfabric.tcruntime:spring-boot-starter-tcserver:$project.tcserver_springboot_version")
+    compile("com.springsource.vfabric.tcruntime:spring-boot-starter-tcserver:$project.spring_boot_starter_tcserver_version")
 }
