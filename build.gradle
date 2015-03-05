@@ -1,0 +1,57 @@
+/*
+
+Create a gradle.properties file and define your CloudFoundry Repo
+username and password.
+
+sample gradle.properties:
+
+cf_repo_username=your_username
+cf_repo_password=your_password
+
+ */
+
+project.ext {
+    tcserver_springboot_version = '0.1.RELEASE'
+    cf_springboot_repo = 'http://repository.cloudfoundry.com/data3/spring-boot-starter-tcserver-milestone/maven/bundles/milestone'
+    cf_tcruntime_repo = 'http://repository.cloudfoundry.com/data3/tcruntime-release/maven/bundles/release'
+}
+
+buildscript {
+    repositories {
+        maven {
+            url 'http://repo.spring.io/libs-release'
+        }
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.2.2.RELEASE")
+    }
+}
+
+apply plugin: 'spring-boot'
+
+repositories {
+    maven {
+        url 'http://repo.spring.io/libs-release'
+    }
+    maven {
+        credentials {
+           username project.cf_repo_username
+           password project.cf_repo_password
+        }
+        url project.cf_springboot_repo
+    }
+    maven {
+        credentials {
+           username project.cf_repo_username
+           password project.cf_repo_password
+        }
+        url project.cf_tcruntime_repo
+    }
+}
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web") {
+       exclude module: "spring-boot-starter-tomcat"
+   }
+    compile("com.springsource.vfabric.tcruntime:spring-boot-starter-tcserver:$project.tcserver_springboot_version")
+}
