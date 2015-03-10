@@ -57,7 +57,13 @@ curl localhost:8080
 Gradle usage
 ============
 
-For gradle usage example please see build.gradle
+Please see gradle.build for an example of usage for the Pivotal Commercial Maven Repository. You must also create a gradle.properties file which defines pivotal_maven_repo_username and pivotal_maven_repo_password. These should be set based on your Pivotal Commercial Maven Repository username and password.
+
+Example gradle.properties
+```
+pivotal_maven_repo_username=your_username
+pivotal_maven_repo_password=your_password
+```
 
 Troubleshooting
 ===============
