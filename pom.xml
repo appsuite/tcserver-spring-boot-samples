@@ -52,7 +52,7 @@
 		<repository>
 			<id>spring-boot-starter-tcserver-release</id>
 			<name>Pivotal tc Server Spring Boot Starter Release</name>
-			<url>http://repository.cloudfoundry.com/data3/spring-boot-starter-tcserver-release/maven/bundles/release</url>
+			<url>http://commercial-repo.pivotal.io/data3/spring-boot-starter-tcserver-release/maven/bundles/release</url>
 		</repository>
 	</repositories>
 

@@ -9,7 +9,7 @@ Prerequisites
 =============
 To use this example you will need
 
-* Register for free access to Pivotal Commercial Maven Repository - https://repository.cloudfoundry.com/
+* Register for free access to Pivotal Commercial Maven Repository - http://commercial-repo.pivotal.io/
 * JRE/JDK 7 or newer
 * Maven 3.2 or newer (Required by spring-boot-maven-plugin)
 
