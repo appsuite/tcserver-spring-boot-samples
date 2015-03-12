@@ -69,4 +69,5 @@ dependencies {
        exclude module: "spring-boot-starter-tomcat"
    }
     compile("com.springsource.vfabric.tcruntime:spring-boot-starter-tcserver:$project.spring_boot_starter_tcserver_version")
+    testCompile("org.springframework.boot:spring-boot-starter-test")
 }
