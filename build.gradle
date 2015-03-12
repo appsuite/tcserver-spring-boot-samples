@@ -44,6 +44,10 @@ buildscript {
 
 apply plugin: 'spring-boot'
 
+// IDE support: uncomment one of the following per your IDE
+//apply plugin: 'eclipse'  // run "eclipse" task to create Eclipse project files
+//apply plugin: 'idea'     // run "idea" task to create IDEA project files
+
 repositories {
     maven {
         url 'http://repo.spring.io/libs-release'
