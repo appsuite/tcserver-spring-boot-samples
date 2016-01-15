@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 Pivotal Software, Inc.
+ * Copyright 2015-2016 Pivotal Software, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -26,9 +26,8 @@ pivotal_maven_repo_password=your_password
 */
 
 project.ext {
-    spring_boot_starter_tcserver_version = '0.1.RELEASE'
-    spring_boot_starter_tcserver_release_repo = 'http://repository.cloudfoundry.com/data3/spring-boot-starter-tcserver-release/maven/bundles/release'
-    tcruntime_embedded_repo = 'http://repository.cloudfoundry.com/data3/tcruntime-release/maven/bundles/release'
+    spring_boot_starter_tcserver_version = '3.1.3.SR1-8.0.30.C.RELEASE'
+    spring_boot_starter_tcserver_release_repo = 'http://commercial-repo.pivotal.io/data3/tcserver-release-repo/tcserver'
 }
 
 buildscript {
@@ -59,19 +58,12 @@ repositories {
         }
         url project.spring_boot_starter_tcserver_release_repo
     }
-    maven {
-        credentials {
-           username project.pivotal_maven_repo_username
-           password project.pivotal_maven_repo_password
-        }
-        url project.tcruntime_embedded_repo
-    }
 }
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web") {
        exclude module: "spring-boot-starter-tomcat"
    }
-    compile("com.springsource.vfabric.tcruntime:spring-boot-starter-tcserver:$project.spring_boot_starter_tcserver_version")
+    compile("io.pivotal.tcserver.boot:spring-boot-starter-tcserver:$project.spring_boot_starter_tcserver_version")
     testCompile("org.springframework.boot:spring-boot-starter-test")
 }
