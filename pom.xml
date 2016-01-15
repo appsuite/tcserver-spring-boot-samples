@@ -22,7 +22,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<start-class>com.springsource.tcruntime.embedded.bootexample.SpringBootStarterTcserverExampleApplication</start-class>
 		<java.version>1.7</java.version>
-		<spring-boot-starter-tcserver.version>3.1.3.SR1-8.0.30.C.RELEASE</spring-boot-starter-tcserver.version>
+		<spring-boot-starter-tcserver.version>3.1.3.SR1</spring-boot-starter-tcserver.version>
 	</properties>
 
 	<dependencies>

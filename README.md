@@ -65,6 +65,18 @@ pivotal_maven_repo_username=your_username
 pivotal_maven_repo_password=your_password
 ```
 
+Changing tc Server version
+==========================
+As with spring-boot-starter-tomcat you may configure which version of tc Server is used with this starter. In your pom you simply need to to specify the properties for tcserver.version and the tcserver.runtime.version. By default this starter uses tc Runtime 8.0.30.C.RELEASE
+
+```
+	<properties>
+		<tcserver.version>3.1.3.SR1</tcserver.version>
+		<tcserver.runtime.version>7.0.67.B.RELEASE</tcserver.runtime.version>
+	</properties>
+```
+
+
 Troubleshooting
 ===============
 
