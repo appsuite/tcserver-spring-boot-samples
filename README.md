@@ -22,7 +22,7 @@ You will need the following configured in your ~/.m2/settings.xml. Username and 
 <settings>
 	<servers>
 		<server>
-			<id>tcruntime-release</id>
+			<id>tcruntime-release-repo</id>
 			<username>*your email*</username>
 			<password>*your password*</password>
 		</server>

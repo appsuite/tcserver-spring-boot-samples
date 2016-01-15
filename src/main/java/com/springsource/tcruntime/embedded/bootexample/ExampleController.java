@@ -25,7 +25,7 @@ import java.util.regex.Pattern;
 
 @RestController
 public class ExampleController {
-    private final static String JAR_PATTERN = ".*(com\\.springsource\\.org\\.apache\\.tomcat\\.embed\\.core\\-)(.*)(\\.jar).*";
+    private final static String JAR_PATTERN = ".*(io\\.pivotal\\.tcserver\\.org\\.apache\\.tomcat\\.core\\-)(.*)(\\.jar).*";
     private final Pattern pattern = Pattern.compile(JAR_PATTERN);
 
     @RequestMapping("/")
