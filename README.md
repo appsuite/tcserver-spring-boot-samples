@@ -1,9 +1,8 @@
 # spring-boot-starter-tcserver-example
-Example usage of spring-boot-starter-tcserver
 
-This project is a simple example of how to use spring-boot-starter-tcserver as a drop in replacement for spring-boot-starter-tomcat.  
+This repository contains examples of how to use embedded tc Server with spring-boot via spring-boot-starter-tcserver.  Most of the examples are copies of existing spring-boot-samples-tomcat that have been modified to use embedded tc Server instead of tomcat.
 
-Currently spring-boot-starter-tcserver version 0.1.RELEASE only provides a drop in replacement for spring-boot-starter-tomcat. Additional functionality will be added in the next release.
+The spring-boot-sample-tcserver-obfuscated-ssl shows how to use tc Server obfuscation in application.properties.
 
 Prerequisites
 =============
@@ -52,17 +51,6 @@ You can use curl to verify
 
 ```
 curl localhost:8080
-```
-
-Gradle usage
-============
-
-Please see gradle.build for an example of usage for the Pivotal Commercial Maven Repository. You must also create a gradle.properties file which defines pivotal_maven_repo_username and pivotal_maven_repo_password. These should be set based on your Pivotal Commercial Maven Repository username and password.
-
-Example gradle.properties
-```
-pivotal_maven_repo_username=your_username
-pivotal_maven_repo_password=your_password
 ```
 
 Changing tc Server version
