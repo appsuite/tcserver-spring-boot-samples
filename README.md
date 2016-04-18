@@ -1,6 +1,6 @@
-# spring-boot-starter-tcserver-example
+# tcserver-spring-boot-example
 
-This repository contains examples of how to use embedded tc Server with spring-boot via spring-boot-starter-tcserver.  Most of the examples are copies of existing spring-boot-samples-tomcat that have been modified to use embedded tc Server instead of tomcat.
+This repository contains examples of how to use embedded tc Server with spring-boot via tcserver-spring-boot.  Most of the examples are copies of existing spring-boot-samples-tomcat that have been modified to use embedded tc Server instead of tomcat.
 
 The spring-boot-sample-tcserver-obfuscated-ssl shows how to use tc Server obfuscation in application.properties.
 
@@ -26,7 +26,7 @@ You will need the following configured in your ~/.m2/settings.xml. Username and 
 			<password>*your password*</password>
 		</server>
 		<server>
-			<id>spring-boot-starter-tcserver-release</id>
+			<id>tcserver-spring-boot-release</id>
 			<username>*your email*</username>
 			<password>*your password*</password>
 		</server>

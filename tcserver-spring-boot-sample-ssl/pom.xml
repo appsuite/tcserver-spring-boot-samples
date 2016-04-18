@@ -15,8 +15,7 @@
 		<url>http://www.pivotal.io</url>
 	</organization>
 	<properties>
-		<main.basedir>${basedir}/../..</main.basedir>
-		<spring-boot-starter-tcserver.version>3.1.3.SR1</spring-boot-starter-tcserver.version>
+		<tcserver-spring-boot.version>3.1.4.BUILD-SNAPSHOT</tcserver-spring-boot.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -25,8 +24,8 @@
 		</dependency>
                 <dependency>
                         <groupId>io.pivotal.tcserver.boot</groupId>
-                        <artifactId>spring-boot-starter-tcserver</artifactId>
-                        <version>${spring-boot-starter-tcserver.version}</version>
+                        <artifactId>tcserver-spring-boot-starter</artifactId>
+                        <version>${tcserver-spring-boot.version}</version>
                 </dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -48,7 +47,7 @@
 	</dependencies>
         <repositories>
                 <repository>
-                        <id>spring-boot-starter-tcserver-release</id>
+                        <id>tcserver-spring-boot-release</id>
                         <name>Pivotal tc Server Spring Boot Starter Release</name>
                         <url>http://commercial-repo.pivotal.io/data3/tcserver-release-repo/</url>
                 </repository>
