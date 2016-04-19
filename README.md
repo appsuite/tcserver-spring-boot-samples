@@ -2,7 +2,7 @@
 
 This repository contains examples of how to use embedded tc Server with spring-boot via tcserver-spring-boot.  Most of the examples are copies of existing spring-boot-samples-tomcat that have been modified to use embedded tc Server instead of tomcat.
 
-The spring-boot-sample-tcserver-obfuscated-ssl shows how to use tc Server obfuscation in application.properties.
+The tcserver-spring-boot-sample-obfuscated-ssl shows how to use tc Server obfuscation in application.properties.
 
 Prerequisites
 =============
