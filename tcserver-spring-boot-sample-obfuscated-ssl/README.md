@@ -55,7 +55,7 @@ This sample demonstrates how to use encoded values in src/main/resources/applica
 org.apache.tomcat.util.digester.PROPERTY_SOURCE=com.springsource.tcserver.security.PropertyDecoder
 com.springsource.tcserver.security.PropertyDecoder.passphrase=<passphrase>
 ``` 
-Replace <passphrase> with your passphrase
+Replace \<passphrase\> with your passphrase
 
 You may then use any encoded value as a property. The sample shows the server.ssl.key-store-password value being encoded
 
