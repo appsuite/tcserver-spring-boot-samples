@@ -15,7 +15,7 @@
 		<url>http://www.pivotal.io</url>
 	</organization>
 	<properties>	
-		<tcserver-spring-boot.version>3.1.4.BUILD-SNAPSHOT</tcserver-spring-boot.version>
+		<tcserver-spring-boot.version>3.1.4.SR1</tcserver-spring-boot.version>
 		<start-class>sample.tcserver.actuator.SampleTomcatSslApplication</start-class>
 	</properties>
 	<dependencies>
