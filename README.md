@@ -34,9 +34,10 @@ You will need the following configured in your ~/.m2/settings.xml. Username and 
 </settings>
 ```
 
-Once configured you can run the example via maven.
+Once configured you can run each example via maven.
 
 ```
+cd tcserver-spring-boot-sample
 mvn spring-boot:run
 ```
 
@@ -53,9 +54,11 @@ You can use curl to verify
 curl localhost:8080
 ```
 
+There are other samples available in each folder in this repo
+
 Changing tc Server version
 ==========================
-As with spring-boot-starter-tomcat you may configure which version of tc Server is used with this starter. In your pom you simply need to to specify the properties for tcserver.version and the tcserver.runtime.version. By default this starter uses tc Runtime 8.0.30.C.RELEASE
+As with spring-boot-starter-tomcat you may configure which version of tc Server is used with this starter. In your pom you simply need to to specify the properties for tcserver.version and the tcserver.runtime.version. By default this starter uses tc Runtime 8.0.33.A.RELEASE. The following snipet shows how to use an older release.
 
 ```
 	<properties>
