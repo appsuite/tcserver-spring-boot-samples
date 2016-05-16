@@ -63,7 +63,7 @@ You may then use any encoded value as a property. The sample shows the server.ss
 Troubleshooting
 ===============
 
-* "Tomcat connector in failed state" - This generally means that there is a port conflict. By default this example tries to bind to port 8080.
+* "Tomcat connector in failed state" - This generally means that there is a port conflict. By default this example tries to bind to port 8443.
 
 References
 ==========
