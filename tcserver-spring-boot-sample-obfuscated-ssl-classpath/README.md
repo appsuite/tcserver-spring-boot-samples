@@ -5,7 +5,7 @@ Example usage of tcserver-spring-boot-starter with obfuscated values in applicat
 Prerequisites
 =============
 
-To use this sample you should read the parent repository [README.md](../README) which contains information on configuring the needed repositories.
+To use this sample you should read the parent repository [README.md](../README.md) which contains information on configuring the needed repositories.
 
 Usage
 =====

@@ -5,7 +5,7 @@ This is a sample application using the tcserver-spring-boot.  This is based on  
 Prerequisites
 =============
 
-To use this sample you should read the parent repository [README.md](../README) which contains information on configuring the needed repositories.
+To use this sample you should read the parent repository [README.md](../README.md) which contains information on configuring the needed repositories.
 
 Usage
 =====
