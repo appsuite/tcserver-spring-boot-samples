@@ -1,84 +1,62 @@
-# tcserver-spring-boot-example
+# tcserver-spring-boot-samples
 
-This repository contains examples of how to use embedded tc Server with spring-boot via tcserver-spring-boot.  Most of the examples are copies of existing spring-boot-samples-tomcat that have been modified to use embedded tc Server instead of tomcat.
+This repository contains examples of how to use embedded tc Server with Spring Boot via tcserver-spring-boot.  Most of the examples are copies of existing spring-boot-samples-tomcat that have been modified to use embedded tc Server instead of tomcat.
 
-The tcserver-spring-boot-sample-obfuscated-ssl shows how to use tc Server obfuscation in application.properties.
+These samples assume you have some familiarity with Spring Boot and tc Server. More information about Spring Boot may be found at [http://projects.spring.io/spring-boot/]().
 
 Prerequisites
 =============
-To use this example you will need
+To use these samples you will need
 
-* Register for free access to Pivotal Commercial Maven Repository - http://commercial-repo.pivotal.io/
+* Register for free access to Pivotal Commercial Maven Repository - [http://commercial-repo.pivotal.io/]()
 * JRE/JDK 7 or newer
 * Maven 3.2 or newer (Required by spring-boot-maven-plugin)
 
-Maven Usage
-==================
+Samples
+=======
 
-You will need the following configured in your ~/.m2/settings.xml. Username and password should be the same as used on the Pivotal Commercial Maven Repository
+The following samples are available
 
-```xml
+* [tcserver-spring-boot-sample]()
+* [tcserver-spring-boot-sample-actuator]()
+* [tcserver-spring-boot-sample-jsp]()
+* [tcserver-spring-boot-sample-multi-connectors]()
+* [tcserver-spring-boot-sample-obfuscated-ssl]()
+* [tcserver-spring-boot-sample-ssl]()
+
+The above samples are originally based on code from Spring Boot Samples
+
+Pivotal Commercial Maven Setup
+============
+
+Pivotal provides a restricted repository with tc Server jars which are used by tc Server Spring Boot. You are required to register for access and to accept the Pivotal EULIA in order to use tc Server Spring Boot.
+
+Once you have obtained access and accepted the EULA you will need to configure your maven settings for authentication to this repository.
+
+Example ~/.m2/settings.xml file
+
+```
 <settings>
 	<servers>
 		<server>
-			<id>tcruntime-release-repo</id>
-			<username>*your email*</username>
-			<password>*your password*</password>
-		</server>
-		<server>
-			<id>tcserver-spring-boot-release</id>
-			<username>*your email*</username>
-			<password>*your password*</password>
+			<id>tcserver-release-repo</id>
+			<username>YOUR_EMAIL_ADDRESS</username>
+			<password>YOUR_PASSWORD</password>
 		</server>
 	</servers>
 </settings>
 ```
 
-Once configured you can run each example via maven.
+In the above example you will need to replace YOUR\_EMAIL\_ADDRESS and YOUR\_PASSWORD with the email address and password used to register for the Pivotal Commercial Maven Repository.
 
-```
-cd tcserver-spring-boot-sample
-mvn spring-boot:run
-```
+**Important Security Note**: These samples use the HTTPS protocol to access the repository and transmit your username and password via HTTPS. If you the repository URL starts with http:// instead of https:// then the username and password provided in settings.xml will be transmitted in clear text.
 
-Alternatively you may specify the port to bind to via the server.port property
-```
-mvn spring-boot:run -Dserver.port=8081
-```
-
-This example runs a simple web app with the Embedded tc Runtime version as the content.
-
-You can use curl to verify
-
-```
-curl localhost:8080
-```
-
-There are other samples available in each folder in this repo
-
-Changing tc Server version
-==========================
-As with spring-boot-starter-tomcat you may configure which version of tc Server is used with this starter. In your pom you simply need to to specify the properties for tcserver.version and the tcserver.runtime.version. By default this starter uses tc Runtime 8.0.33.A.RELEASE. The following snipet shows how to use an older release.
-
-```
-	<properties>
-		<tcserver.version>3.1.3.SR1</tcserver.version>
-		<tcserver.runtime.version>7.0.67.B.RELEASE</tcserver.runtime.version>
-	</properties>
-```
-
-
-Troubleshooting
-===============
-
-* "Tomcat connector in failed state" - This generally means that there is a port conflict. By default this example tries to bind to port 8080.
-
-References
+Documentation References
 ==========
 
-* Spring Boot - http://projects.spring.io/spring-boot/  Docs: http://docs.spring.io/spring-boot/docs/1.2.2.RELEASE/reference/htmlsingle/
-* tc Server -  http://tcserver.docs.pivotal.io/index.html
+* Spring Boot - [http://docs.spring.io/spring-boot/docs/1.2.2.RELEASE/reference/htmlsingle/]()
+* tc Server -  [http://tcserver.docs.pivotal.io/index.html]()
 
 License
 =======
-This example is licensed under the Apache Software License 2.0
+The sample code in this repository is licensed under the Apache Software License 2.0
