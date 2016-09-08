@@ -1,6 +1,6 @@
 # tcserver-spring-boot-sample
 
-This is a sample application using the tcserver-spring-boot.  This is based on  the Spring Boot Tomcat Sample application located at [https://github.com/spring-projects/spring-boot/tree/master/spring-boot-samples/spring-boot-sample-tomcat/src/main/java/sample/tomcat](). The pom.xml has been modified to use embedded tc Runtime via tc Server Spring Boot. 
+This is a sample application using the tcserver-spring-boot.  This is based on  the Spring Boot Tomcat Sample application located at [https://github.com/spring-projects/spring-boot/tree/master/spring-boot-samples/spring-boot-sample-tomcat/src/main/java/sample/tomcat](https://github.com/spring-projects/spring-boot/tree/master/spring-boot-samples/spring-boot-sample-tomcat/src/main/java/sample/tomcat). The pom.xml has been modified to use embedded tc Runtime via tc Server Spring Boot. 
 
 Prerequisites
 =============

@@ -1,6 +1,6 @@
 # tcserver-spring-boot-samples
 
-This repository contains examples of how to use embedded tc Server with Spring Boot via tcserver-spring-boot.  Most of the examples are copies of existing spring-boot-samples-tomcat that have been modified to use embedded tc Server instead of tomcat.
+This repository contains examples of how to use embedded tc Server with Spring Boot via tcserver-spring-boot.  Most of the samples are copies of existing spring-boot-samples-tomcat that have been modified to use embedded tc Server instead of tomcat.  Samples without a README.md just have their pom.xml files modified for tc Server Spring Boot Specifics.
 
 These samples assume you have some familiarity with Spring Boot and tc Server. More information about Spring Boot may be found at [http://projects.spring.io/spring-boot/]().
 
@@ -17,12 +17,12 @@ Samples
 
 The following samples are available
 
-* [tcserver-spring-boot-sample]()
-* [tcserver-spring-boot-sample-actuator]()
-* [tcserver-spring-boot-sample-jsp]()
-* [tcserver-spring-boot-sample-multi-connectors]()
-* [tcserver-spring-boot-sample-obfuscated-ssl]()
-* [tcserver-spring-boot-sample-ssl]()
+* [tcserver-spring-boot-sample](tcserver-spring-boot-sample)
+* [tcserver-spring-boot-sample-actuator](tcserver-spring-boot-sample-actuator)
+* [tcserver-spring-boot-sample-jsp](tcserver-spring-boot-sample-jsp)
+* [tcserver-spring-boot-sample-multi-connectors](tcserver-spring-boot-sample-multi-connectors)
+* [tcserver-spring-boot-sample-obfuscated-ssl](tcserver-spring-boot-sample-obfuscated-ssl)
+* [tcserver-spring-boot-sample-ssl](tcserver-spring-boot-sample-ssl)
 
 The above samples are originally based on code from Spring Boot Samples
 
@@ -49,13 +49,13 @@ Example ~/.m2/settings.xml file
 
 In the above example you will need to replace YOUR\_EMAIL\_ADDRESS and YOUR\_PASSWORD with the email address and password used to register for the Pivotal Commercial Maven Repository.
 
-**Important Security Note**: These samples use the HTTPS protocol to access the repository and transmit your username and password via HTTPS. If you the repository URL starts with http:// instead of https:// then the username and password provided in settings.xml will be transmitted in clear text.
+**Important Security Note**: These samples use the HTTPS protocol to access the repository and transmit your username and password via HTTPS. If the repository URL in your pom.xml starts with http:// instead of https:// then the username and password provided in settings.xml will be transmitted in clear text.
 
 Documentation References
 ==========
 
-* Spring Boot - [http://docs.spring.io/spring-boot/docs/1.2.2.RELEASE/reference/htmlsingle/]()
-* tc Server -  [http://tcserver.docs.pivotal.io/index.html]()
+* Spring Boot - [http://docs.spring.io/spring-boot/docs/1.2.2.RELEASE/reference/htmlsingle/](http://docs.spring.io/spring-boot/docs/1.2.2.RELEASE/reference/htmlsingle/)
+* tc Server -  [http://tcserver.docs.pivotal.io/index.html](http://tcserver.docs.pivotal.io/index.html)
 
 License
 =======
