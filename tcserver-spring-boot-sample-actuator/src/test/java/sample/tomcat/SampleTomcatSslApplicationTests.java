@@ -24,7 +24,7 @@ import org.apache.http.ssl.SSLContextBuilder;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.WebIntegrationTest;
-import sample.tcserver.actuator.SampleTomcatSslApplication;
+import sample.tcserver.actuator.SampleTcServerActuatorApplication;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.SpringApplicationConfiguration;
@@ -38,7 +38,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(SampleTomcatSslApplication.class)
+@SpringApplicationConfiguration(SampleTcServerActuatorApplication.class)
 @WebIntegrationTest(randomPort = true)
 @DirtiesContext
 public class SampleTomcatSslApplicationTests {

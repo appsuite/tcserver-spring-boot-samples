@@ -26,7 +26,7 @@ public class SampleController {
 	@RequestMapping("/")
 	@ResponseBody
 	public String helloWorld() {
-		return "Hello, world";
+		return "Please query /tcserver to see the results of the actuator";
 	}
 
 }
