@@ -16,7 +16,7 @@
 		<url>http://www.pivotal.io</url>
 	</organization>
 	<properties>
-		<tcserver-spring-boot.version>3.2.0.RELEASE</tcserver-spring-boot.version>
+		<tcserver-spring-boot.version>3.2.1.RELEASE</tcserver-spring-boot.version>
 		<m2eclipse.wtp.contextRoot>/</m2eclipse.wtp.contextRoot>
 	</properties>
 	<dependencies>
