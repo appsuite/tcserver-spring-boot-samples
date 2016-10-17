@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.4.0.RELEASE</version>
+		<version>1.4.1.RELEASE</version>
 	</parent>
 	<artifactId>tcserver-spring-boot-sample</artifactId>
 	<name>Spring Boot Tomcat Sample</name>
@@ -14,7 +14,7 @@
 		<url>http://www.pivotal.io</url>
 	</organization>
 	<properties>
-		<tcserver-spring-boot.version>3.2.0.RELEASE</tcserver-spring-boot.version>
+		<tcserver-spring-boot.version>3.2.1.RELEASE</tcserver-spring-boot.version>
 	</properties>
 	<dependencies>
 		<dependency>
