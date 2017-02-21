@@ -10,7 +10,7 @@ Prerequisites
 =============
 To use these samples you will need
 
-* Register for free access to Pivotal Commercial Maven Repository - [http://commercial-repo.pivotal.io/]()
+* Register for free access to Pivotal Commercial Maven Repository - [http://commercial-repo.pivotal.io/](http://commercial-repo.pivotal.io/)
 * JRE/JDK 7 or newer
 * Maven 3.2 or newer (Required by spring-boot-maven-plugin)
 
@@ -31,7 +31,7 @@ The above samples are originally based on code from Spring Boot Samples
 Pivotal Commercial Maven Setup
 ============
 
-Pivotal provides a restricted repository with tc Server jars which are used by tc Server Spring Boot. You are required to register for access and to accept the Pivotal EULIA in order to use tc Server Spring Boot.
+Pivotal provides a restricted repository with tc Server jars which are used by tc Server Spring Boot. You are required to register for access and to accept the Pivotal EULA in order to use tc Server Spring Boot.
 
 Once you have obtained access and accepted the EULA you will need to configure your maven settings for authentication to this repository.
 
