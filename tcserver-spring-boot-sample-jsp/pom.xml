@@ -16,7 +16,7 @@
 		<url>http://www.pivotal.io</url>
 	</organization>
 	<properties>
-		<tcserver-spring-boot.version>3.2.1.RELEASE</tcserver-spring-boot.version>
+		<tcserver-spring-boot.version>3.2.6.RELEASE</tcserver-spring-boot.version>
 		<m2eclipse.wtp.contextRoot>/</m2eclipse.wtp.contextRoot>
 	</properties>
 	<dependencies>
@@ -42,12 +42,12 @@
 		<dependency>
 			<groupId>tcruntime.embed</groupId>
 			<artifactId>io.pivotal.tcserver.org.apache.tomcat.jasper</artifactId>
-			<version>8.5.4.B.RELEASE</version>
+			<version>8.5.15.C.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>tcruntime.embed</groupId>
 			<artifactId>io.pivotal.tcserver.org.eclipse.jdt.core.compiler</artifactId>
-			<version>8.5.4.B.RELEASE</version>
+			<version>8.5.15.C.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
