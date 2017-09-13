@@ -15,7 +15,7 @@
 		<url>http://www.pivotal.io</url>
 	</organization>
 	<properties>
-		<tcserver-spring-boot.version>3.2.6.RELEASE</tcserver-spring-boot.version>
+		<tcserver-spring-boot.version>3.2.7.RELEASE</tcserver-spring-boot.version>
 	</properties>
 	<dependencies>
 		<dependency>
