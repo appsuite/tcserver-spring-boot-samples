@@ -1,0 +1,43 @@
+buildscript {
+	ext {
+		springBootVersion = '2.0.1.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+group = 'io.pivotal.tcserver.boot.sample'
+version = '4.0.0-SNAPSHOT'
+sourceCompatibility = 1.8
+
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+    maven {
+        credentials {
+            username "$tcserverReleaseRepoUser"
+            password "$tcserverReleaseRepoPassword"
+        }
+        url "https://commercial-repo.pivotal.io/data3/tcserver-release-repo/tcserver"
+    }
+}
+
+dependencies {
+	compile('org.springframework.boot:spring-boot-starter-actuator')
+	compile('org.springframework.boot:spring-boot-starter-web') {
+		exclude module: 'spring-boot-starter-tomcat'
+	}
+    compile("io.pivotal.tcserver.boot:tcserver-spring-boot-actuator:${tcserverSpringBootVersion}")
+	compile("io.pivotal.tcserver.boot:tcserver-spring-boot-starter:${tcserverSpringBootVersion}")
+	testCompile('org.springframework.boot:spring-boot-starter-test')
+}
