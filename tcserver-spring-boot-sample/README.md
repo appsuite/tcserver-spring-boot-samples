@@ -34,12 +34,12 @@ Notable pom.xml changes
                 <repository>
                         <id>tcserver-spring-boot-release</id>
                         <name>Pivotal tc Server Spring Boot Starter Release</name>
-                        <url>http://commercial-repo.pivotal.io/data3/tcserver-release-repo/</url>
+                        <url>https://commercial-repo.pivotal.io/data3/tcserver-release-repo/</url>
                 </repository>
                 <repository>
                         <id>tcserver-release-repo</id>
                         <name>Pivotal tc Server Release Repo (3.1.3+)</name>
-                        <url>http://commercial-repo.pivotal.io/data3/tcserver-release-repo/tcserver</url>
+                        <url>https://commercial-repo.pivotal.io/data3/tcserver-release-repo/tcserver</url>
                 </repository>
         </repositories>
 

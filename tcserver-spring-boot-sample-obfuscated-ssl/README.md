@@ -29,7 +29,7 @@ server.ssl.key-password = password
 
 Note that server.ssl.key-store-password has been encoded using tc Server's property obfuscation feature.
 
-More information about this feature may be found at [http://docs-tcserver-staging.cfapps.io/docs-tcserver/topics/manual.html#obfusc](http://docs-tcserver-staging.cfapps.io/docs-tcserver/topics/manual.html#obfusc)
+More information about this feature may be found at [https://docs-tcserver-staging.cfapps.io/docs-tcserver/topics/manual.html#obfusc](https://docs-tcserver-staging.cfapps.io/docs-tcserver/topics/manual.html#obfusc)
 
 
 License

@@ -2,13 +2,13 @@
 
 This repository contains examples of how to use embedded tc Server with Spring Boot via tcserver-spring-boot.  Most of the samples are copies of existing spring-boot-samples-tomcat that have been modified to use embedded tc Server instead of tomcat.  Samples without a README.md just have their pom.xml files modified for tc Server Spring Boot Specifics.
 
-These samples assume you have some familiarity with Spring Boot and tc Server. More information about Spring Boot may be found at [http://projects.spring.io/spring-boot/]().
+These samples assume you have some familiarity with Spring Boot and tc Server. More information about Spring Boot may be found at [https://projects.spring.io/spring-boot/]().
 
 Prerequisites
 =============
 To use these samples you will need
 
-* Register for free access to Pivotal Commercial Maven Repository - [http://commercial-repo.pivotal.io/]()
+* Register for free access to Pivotal Commercial Maven Repository - [https://commercial-repo.pivotal.io/]()
 * JRE/JDK 7 or newer
 * Maven 3.2 or newer (Required by spring-boot-maven-plugin)
 
@@ -54,8 +54,8 @@ In the above example you will need to replace YOUR\_EMAIL\_ADDRESS and YOUR\_PAS
 Documentation References
 ==========
 
-* Spring Boot - [http://docs.spring.io/spring-boot/docs/1.2.2.RELEASE/reference/htmlsingle/](http://docs.spring.io/spring-boot/docs/1.2.2.RELEASE/reference/htmlsingle/)
-* tc Server -  [http://tcserver.docs.pivotal.io/index.html](http://tcserver.docs.pivotal.io/index.html)
+* Spring Boot - [https://docs.spring.io/spring-boot/docs/1.2.2.RELEASE/reference/htmlsingle/](https://docs.spring.io/spring-boot/docs/1.2.2.RELEASE/reference/htmlsingle/)
+* tc Server -  [https://tcserver.docs.pivotal.io/index.html](https://tcserver.docs.pivotal.io/index.html)
 
 License
 =======

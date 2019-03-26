@@ -726,8 +726,8 @@ Example JSON Data:
 Documentation References
 ==========
 
-* Spring Boot - [http://docs.spring.io/spring-boot/docs/1.2.2.RELEASE/reference/htmlsingle/]()
-* tc Server -  [http://tcserver.docs.pivotal.io/index.html]()
+* Spring Boot - [https://docs.spring.io/spring-boot/docs/1.2.2.RELEASE/reference/htmlsingle/]()
+* tc Server -  [https://tcserver.docs.pivotal.io/index.html]()
 
 License
 =======
