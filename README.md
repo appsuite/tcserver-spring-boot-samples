@@ -18,31 +18,6 @@ The following samples are available
 
 * [tcserver-spring-boot-sample](tcserver-spring-boot-sample)
 
-Pivotal Commercial Maven Setup
-============
-
-Pivotal provides a restricted repository with tc Server jars which are used by tc Server Spring Boot. You are required to register for access and to accept the Pivotal EULA in order to use tc Server Spring Boot.
-
-Once you have obtained access and accepted the EULA you will need to configure your maven settings for authentication to this repository.
-
-Example ~/.m2/settings.xml file
-
-```
-<settings>
-	<servers>
-		<server>
-			<id>tcserver-release-repo</id>
-			<username>YOUR_EMAIL_ADDRESS</username>
-			<password>YOUR_PASSWORD</password>
-		</server>
-	</servers>
-</settings>
-```
-
-In the above example you will need to replace YOUR\_EMAIL\_ADDRESS and YOUR\_PASSWORD with the email address and password used to register for the Pivotal Commercial Maven Repository.
-
-**Important Security Note**: These samples use the HTTPS protocol to access the repository and transmit your username and password via HTTPS. If the repository URL in your pom.xml starts with http:// instead of https:// then the username and password provided in settings.xml will be transmitted in clear text.
-
 Documentation References
 ==========
 
