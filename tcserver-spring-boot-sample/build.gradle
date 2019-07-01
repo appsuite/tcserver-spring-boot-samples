@@ -16,7 +16,7 @@ apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
 group = 'io.pivotal.tcserver.boot.sample'
-version = '4.0.5'
+version = '4.0.7'
 sourceCompatibility = 1.8
 
 
@@ -37,7 +37,6 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web') {
 		exclude module: 'spring-boot-starter-tomcat'
 	}
-    compile("io.pivotal.tcserver.boot:tcserver-spring-boot-actuator:${tcserverSpringBootVersion}")
 	compile("io.pivotal.tcserver.boot:tcserver-spring-boot-starter:${tcserverSpringBootVersion}")
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
