@@ -17,10 +17,15 @@ This example code is intended to provide an example of gradle changes required f
     }   
 ```
 
-This creates a dependency on two properties `tcserverReleaseRepoUser` and `tcserverReleaseRepoPassword` this should be added to the user's gradle.properties or specified on the gradle command line. These should not be stored in git or svn.
+The above changes require two gradle properties to be defined. These should be added to the user's `gradle.properties` or may be added to the command line, however, that is not recommended for security reasons. 
 
+`$HOME/.gradle/gradle.properties`
+```
+tcserverReleaseRepoUser=your@email.address
+tcserverReleaseRepoPassword=your.commercial.repo.password
+```
 
-Next the Spring Boot tomcat dependency needs to be excluded and tcserver added
+In addition to the previous change to `build.gradle` the Spring Boot tomcat dependency needs to be excluded and tc Server added
 
 
 `build.gradle`
@@ -32,18 +37,12 @@ Next the Spring Boot tomcat dependency needs to be excluded and tcserver added
 
 ```
 
-The gradle.properties for the project should contain a property defining the tc Server version.
+The `gradle.properties` for the project should contain a property defining the tc Server version.
 
 
 `gradle.properties`
 ```
 tcserverSpringBootVersion=4.0.7.RELEASE
-```
-
-`$HOME/.gradle/gradle.properties`
-```
-tcserverReleaseRepoUser=your@email.address
-tcserverReleaseRepoPassword=your.commercial.repo.password
 ```
 
 # Building with Gradle
