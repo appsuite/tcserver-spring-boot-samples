@@ -16,7 +16,7 @@ apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
 group = 'io.pivotal.tcserver.boot.sample'
-version = '4.0.7'
+version = '4.0.8'
 sourceCompatibility = 1.8
 
 
